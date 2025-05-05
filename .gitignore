@@ -134,3 +134,24 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+-----------------------------------------
+@"
+# IDEs
+.idea/
+.vscode/
+
+# Node
+node_modules/
+dist/
+
+# Java
+target/
+*.class
+
+# Otros
+.env
+.DS_Store
+"@ | Out-File -Encoding utf8 .gitignore
+
