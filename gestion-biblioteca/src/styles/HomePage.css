@@ -1,0 +1,146 @@
+@import url(./variables.css);
+
+/* General */
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--usb-gray-dark);
+    background-color: var(--usb-gray-light);
+    margin: 0;
+    padding-top: 60px;
+}
+
+/* Tipografía */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+/* Espaciado navbar */
+.navbar-space {
+    height: 50px;
+}
+
+/* Encabezado principal */
+.usb-header {
+    background: linear-gradient(135deg, var(--usb-primary) 0%, var(--usb-primary-dark) 100%);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 81, 157, 0.35);
+    padding: 2rem;
+    animation: slideDown 0.8s ease-out;
+}
+
+.usb-header-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.usb-header-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.usb-header-icon {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Tarjetas de estadísticas */
+.usb-stat-card {
+    border: 2px solid rgba(0, 81, 157, 0.1);
+    border-radius: 16px;
+    background: white;
+    transition: all 0.4s ease;
+}
+
+.usb-stat-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--usb-secondary);
+    box-shadow: 0 12px 30px rgba(0, 81, 157, 0.2);
+}
+
+.usb-stat-icon {
+    background: rgba(0, 81, 157, 0.1);
+    padding: 0.75rem;
+    border-radius: 12px;
+}
+
+/* Acciones rápidas */
+.usb-quick-action {
+    border: 2px solid rgba(0, 81, 157, 0.15);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.usb-quick-action:hover {
+    border-color: var(--usb-secondary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 81, 157, 0.2);
+}
+
+.usb-action-add {
+    background: linear-gradient(45deg, var(--usb-secondary) 0%, #ffe55c 100%);
+}
+
+.usb-action-catalog {
+    background: linear-gradient(45deg, var(--usb-primary) 0%, #0068c9 100%);
+}
+
+/* Botones y links */
+.usb-link-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(6px);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.usb-link-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+/* Estado de carga */
+.usb-loading-text {
+    background: linear-gradient(90deg, var(--usb-primary)20%, var(--usb-secondary)50%, var(--usb-primary)80%);
+    background-size: 400% 400%;
+    animation: loadingPulse 1.5s infinite ease-in-out;
+    border-radius: 10px;
+    padding: 1rem;
+    color: transparent;
+}
+
+/* Animaciones */
+@keyframes loadingPulse {
+    0% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Hover Grow General */
+.usb-hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.usb-hover-grow:hover {
+    transform: scale(1.02);
+}

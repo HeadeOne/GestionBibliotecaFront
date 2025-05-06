@@ -1,0 +1,30 @@
+:root {
+    --usb-primary: #00519D;
+    --usb-primary-dark: #003A6D;
+    --usb-secondary: #FFD700;
+    --usb-secondary-light: #ffe55c;
+    --usb-gray-dark: #2D3748;
+    --usb-gray-light: #F1F5F9;
+    --usb-white: #FFFFFF;
+
+    --font-primary: 'Roboto', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+
+    /* Sombras y bordes */
+    --usb-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --usb-shadow-lg: 0 12px 30px rgba(0, 81, 157, 0.2);
+    --usb-radius-sm: 8px;
+    --usb-radius-md: 16px;
+    --usb-radius-lg: 20px;
+
+     /* Espaciado */
+    --usb-spacing-sm: 0.5rem;
+    --usb-spacing-md: 1rem;
+    --usb-spacing-lg: 2rem;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+}  
